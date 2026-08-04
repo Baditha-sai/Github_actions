@@ -6,3 +6,8 @@ jobs:
     steps:
       - name: writen hello world
         run: echo "Hello World"
+  bye:
+    runs-on: ubuntu-latest
+    steps:
+      - name: says bye
+        run: echo "bye world"
