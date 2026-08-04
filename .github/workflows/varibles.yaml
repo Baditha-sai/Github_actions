@@ -1,0 +1,11 @@
+name: variable
+on:
+  push:
+    branches:
+      - main
+jobs:
+  var:
+    run-on: ubuntu-latest
+    steps:
+      - name: added variable
+        run: echo "hello, ${{vars.my_name}}"
