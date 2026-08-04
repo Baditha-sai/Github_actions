@@ -7,8 +7,6 @@ jobs:
   demo:
     runs-on: ubuntu-latest
     steps:
-      - name: checkout
-        uses: actions/checkout@v4
       - name: print
         run: cat index.html
       
