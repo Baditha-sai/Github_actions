@@ -1,7 +1,10 @@
 name: hello world
-on: push
-  paths:
-    - .github/workflows/hello.yml
+on:
+  push: 
+    branches: 
+      - main
+    paths:
+      - .github/workflows/hello.yml
 jobs:
   hello:
     runs-on: ubuntu-latest
