@@ -6,6 +6,10 @@ on:
         description: choose the options
         required: true
         default: dev
+        options:
+          - main
+          - test
+          - prod
 jobs:
   input-demo:
     runs-on: ubuntu-latest
