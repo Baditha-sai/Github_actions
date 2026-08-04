@@ -5,11 +5,13 @@ on:
       environment:
         description: choose the options
         required: true
-        default: dev
         options:
           - main
           - test
           - prod
+      tags:
+        description: choose tags
+        required: true
 jobs:
   input-demo:
     runs-on: ubuntu-latest
