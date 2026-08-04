@@ -6,6 +6,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: run for satish or pavan
-        if: github.actor == 'satish' || github.actor == 'pavan'
+        if: github.actor == 'Baditha-sai' || github.actor == 'pavan'
         run: echo "its triggered by satish or pavan"
      
