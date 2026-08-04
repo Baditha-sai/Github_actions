@@ -20,4 +20,6 @@ jobs:
     needs: hello
     steps:
       - name: says bye
-        run: pwd
+        run: |
+          pwd
+          ipconfig
