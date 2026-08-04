@@ -1,5 +1,7 @@
 name: hello world
 on: push
+  paths:
+    - .github/workflows/hello.yml
 jobs:
   hello:
     runs-on: ubuntu-latest
@@ -15,4 +17,4 @@ jobs:
     needs: hello
     steps:
       - name: says bye
-        run: echo "bye world"
+        run: pwd
