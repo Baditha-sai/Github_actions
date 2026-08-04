@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: writen hello world
-        run: echo "Hello World"
+        run: "Hello World"
   bye:
     runs-on: ubuntu-latest
     steps:
