@@ -9,5 +9,9 @@ jobs:
         run: |
           echo "this workflow is triggeredby ${{github.actor}}"
           echo "${{github.repository}}"
+          echo "${{github.ref_name}}"
       - name: json
         run: echo "${{toJson(github)}}"
+
+      - name: print env
+        run: printenv
