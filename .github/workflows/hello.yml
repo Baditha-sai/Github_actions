@@ -6,8 +6,8 @@ jobs:
     steps:
       - name: writen hello world
         run: |
-        echo "Hello World"
-        pwd
+          echo "Hello World"
+          pwd
   bye:
     runs-on: ubuntu-latest
     needs: hello
