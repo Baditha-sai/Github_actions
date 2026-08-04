@@ -8,6 +8,7 @@ jobs:
         run: "Hello World"
   bye:
     runs-on: ubuntu-latest
+    needs: hello
     steps:
       - name: says bye
         run: echo "bye world"
