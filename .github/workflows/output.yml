@@ -2,7 +2,9 @@ name: outputs demo
 on:
   push
 jobs:
-  job1:
+  build:
+    outputs:
+      version: ${{steps.step1.outputs.version}}
     runs-on: ubuntu-latest
     steps:
       - name: step one
@@ -11,3 +13,9 @@ jobs:
 
       - name: step two
         run: echo "this version is ${{steps.step1.outputs.version}}"
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy the app
+        run: echo "we are deploying app with version ${{needs.build.outputs.version}}"
