@@ -5,6 +5,7 @@ on:
       environment:
         description: choose the options
         required: true
+        type: choice
         options:
           - main
           - test
